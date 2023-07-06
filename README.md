@@ -16,6 +16,7 @@ systemctl restart apache2
 ```
 
 a2dissite flask.conf
+sudo lsof -i -P -n | grep LISTEN
 
 Check apache sytax 
 apachectl -t
