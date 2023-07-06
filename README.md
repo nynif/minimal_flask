@@ -11,4 +11,14 @@ ssh root@ip_server
 cd /var/www/
 git clone https://github.com/nynif/minimal_flask.git
 cp flask.conf /etc/apache2/sites-available/flask.conf
+a2ensite flask.conf
+systemctl restart apache2
 ```
+
+a2dissite flask.conf
+
+Check apache sytax 
+apachectl -t
+
+
+https://www.rosehosting.com/blog/how-to-install-flask-on-ubuntu-22-04-with-apache-and-wsgi/
