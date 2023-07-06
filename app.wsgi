@@ -1,0 +1,1 @@
+from minimal_flask import app as application
